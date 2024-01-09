@@ -1,0 +1,121 @@
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 24px;
+
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  border: 2px solid var(--light-text);
+
+  border-radius: 10px;
+}
+
+.form-group .form-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+
+  color: var(--light-grey)
+}
+
+form .form-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.form-group h3 {
+  margin-top: 30px;
+  color: var(--medium-text);
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group .radio-wrapper {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  padding: 8px 4px;
+  position: relative;
+  border-top: 1px solid var(--light-text);
+  color: var(--medium-text)
+}
+
+.form-group .radio-wrapper span {
+  position: absolute;
+  right: 0;
+}
+
+.form-group .radio-wrapper:nth-last-child(2) {
+  border-top: 1px solid var(--light-text);
+  margin-bottom: 34px;
+}
+
+.form-group .btn-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form-group .btn-wrapper .btn {
+  font-size: 18px;
+  color: var(--dark-grey);
+  border-radius: 4px;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px;
+  width: 100%;
+}
+
+.form-group .btn-wrapper .btn-primary {
+  background: var(--yellow);
+  cursor: pointer;
+}
+
+.form-group .btn-wrapper .btn-secondary {
+  cursor: pointer;
+}
+
+.form-group .checkbox-wrapper {
+  color: var(--light-grey);
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-group .checkbox-wrapper input[type='checkbox'] {
+  margin-right: 4px;
+}
+
+
+@media (min-width:600px) {
+  .form-group .btn-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-group .btn-wrapper .btn {
+    width: 25%;
+  }
+
+  .form-group .checkbox-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
